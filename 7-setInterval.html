@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Functions</title>
+    <script>
+        /*
+            setInterval();  Bu fonksiyon sürekli çalışıyor.
+            clearInterval(); setInterval'ı durdurur.
+            setTimeout();   Bu fonksiyon bir kere çalışıyor.
+        */
+
+       function x(){
+
+        var deneme = document.getElementById("ornek").value;
+        document.getElementById("sonuc").innerHTML += ".";
+       
+    }
+
+       //interval : ara, zaman
+       //setInterval fonksiyonu 2 değer alır.
+       //1=Fonksiyon 2=Kaç saniyede bir çalışacak?
+       var d = setInterval(x,'3000');
+
+       function c(){
+           clearInterval(d);
+       }
+
+           var saat= new Date();
+           document.write(saat);
+
+    </script>
+
+</head>
+<body>
+    <input type="text" id="ornek">
+    <button type="submit" onclick="x()">Submit</button>  
+    <div id="sonuc"></div>
+    <button type="submit" onclick="c()">Stop</button>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<script>
+/*
+onClick : Elemana tıklanması olayıdır.
+
+---------------------------------------------
+
+onDblClick : Çift tıklanması olayıdır.
+
+---------------------------------------------
+
+onLoad : Elemanın yüklenmesi olayıdır. 
+Bu sayfanın kendisi olabileceği gibi bir resim ya da
+frame de olabilir. Sayfa yüklendiğinde direkt çalışması
+istenen bir fonksiyon varsa bu olay ile çağrılabilir.
+
+<body onload="yuklendi()">
+
+-----------------------------------------------
+
+onUnLoad : Sayfamızı kapattığımızda çalışacaktır.
+Bu pencerenin kapatılmasıyla olabileceği gibi bir linke tıklayarak başka
+bir sayfaya geçilmesi de olabilir.
+
+------------------------------------------------
+
+
+onFocus : Bir elemanın seçilerek odaklanılması olayıdır. 
+Örneğin bir metin kutusuna tıklandığında kontrol o kutuya geçer ve kutu
+aktif olur.
+
+------------------------------------------------
+
+onBlur : Aktif haldeki elemanın terk edilmesi olayıdır.
+
+------------------------------------------------
+
+onMouseOver : Fare ile elemanın üzerine gelinmesi olayıdır.
+
+-------------------------------------------------
+
+onMouseOut : Fare imlecinin elemanın üzerinden çekilmesi olayıdır.
+
+-------------------------------------------------
+
+onMouseMove : Fare imlecinin eleman üzerinde hareket ettirilmesi olayıdır.
+
+-------------------------------------------------
+
+onMouseDown : Fare sol tuşunun eleman üzerindeyken basılması olayıdır.
+Tuş aşağıya indiği anda ilgili fonksiyon çalışır.
+
+-------------------------------------------------
+
+onMouseUp : Fare sol tuşunun eleman üzerindeyken basılıp bırakılması olayıdır.
+Fare tuşu aşağıdayken çalışmaz, tuş bırakıldığında çalışır.
+
+-------------------------------------------------
+
+onKeyDown : Klavyeden bir tuşa basılması olayıdır.
+
+-------------------------------------------------
+
+onSelect : Bir metin kutusu içindeki metnin seçilmesi olayıdır.
+
+-------------------------------------------------
+
+onResize : Tarayıcı penceresinin boyutunun değiştirilmesi olayıdır.
+<body onresize="x()">
+-------------------------------------------------
+
+onSelect : Bir metin kutusu içindeki metnin seçilmesi olayıdır.
+
+-------------------------------------------------
+*/
+
+function deneme1() {
+    alert("double click");
+}
+
+function deneme2() {
+    alert("hi");
+}
+window.onload = deneme2();
+
+function deneme3() {
+    document.getElementById("example").innerHTML ="Please, Enter your name"
+}
+
+function deneme3a() {
+    document.getElementById("example").innerHTML ="You exit the input"
+}
+
+function deneme4() {
+    document.getElementById("button").innerHTML="Your mouse has on the button"
+}
+
+function deneme5() {
+    document.getElementById("button2").innerHTML="Your mouse move on the button"
+}
+
+function deneme6() {
+    alert("you write a word")
+}
+</script>
+
+<body>    
+
+    <button type="button" ondblclick="deneme1()">Click</button>
+
+    <input type="text" onfocus="deneme3()" onblur="deneme3a()" />
+
+    <button type="button" id="button" onmouseover="deneme4()">On mouse over</button>
+
+    <p id="example"></p>
+
+    <button type="button" id="button2" onmousemove="deneme5()">move</button>
+
+    <input type="text" onkeydown="deneme6()">
+
+</body>
+</html>

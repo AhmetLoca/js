@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    /*    
+    Döngüler, birden fazla veriyi listeler.
+    Döngü Type : for, do...while, while, forEach(aslında bir fonksiyon) */
+
+//For DÖNGÜSÜ
+    for(var i=0; i<=10; i++){
+
+        document.write(i+"<br>");
+
+    }
+  /*Değerlerin hepsi for'un içinde yazılıyor.
+    Bütün koşullar for döngüsünün içinde yazılıyor. 
+    Diğer döngülerden farkı bu.
+    
+    Döngülerle diziler uyumlu bir şekilde çalışıyor.
+  */
+
+//While DÖNGÜSÜ
+    /*While döngüsünün for döngüsünden farkı, while döngüsünde sadece koşul yazılıyor. 
+    Ve değişken dışarıda tutuluyor.*/
+
+    var a = 0;
+
+    while(a<10) {
+        a++
+        if(a == 3){
+            continue;
+        }
+          
+        document.write(a+"<br>");
+    }
+
+    //forEach: Diziler için yapılmış bir döngü.
+    
+        //   0   1     2     3   4(anahtar) 
+    var k = [2,true,"mehmet",99,24]; //Anahtar ve değerlerden oluşur.
+
+
+    /*Listeleyebilmek forEach'in için anonim fonksiyon yazmamız gerekiyor. Bunu yazdığımız zaman
+    anonim fonksiyonun içine iki tane değer düşüyor. 1-anahtar 2-değer. İstersek birini yazabiliriz.*/
+    k.forEach(function(a,b){
+
+        // document.write(a+"<br>");
+        document.write(b+"<br>");  //anahtar yani dizi numarası.
+    });
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

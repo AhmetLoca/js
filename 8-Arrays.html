@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <script>
+        /*
+            Diziler, birden fazla veriyi depolamayı sağlar.
+        */
+
+        var x = new Array("ahmet","handan","coskun");
+        document.write(x[0]+ "<br>");
+
+        var y =["ahmet","osman",25,true,["easy","video"]];
+
+        document.write(y[4][1] + "<br>")
+
+        var z = ["osman","mehmet"].length;
+        document.write(z + "<br>");
+
+
+        //concat : birleştirme
+        var a = ["ahmet","osman"].concat(["handan","coskun"]);
+
+        document.write(a + "<br>");
+        //pop, dizinin son elemanına ulaşır.
+        var b = ["ahmet","osman",true].pop();
+
+        document.write(b + "<br>");
+
+
+        var k = ["kamil","bilgisayar","laptop",23,true];
+        for(var i = 0; i<k.length; i++){
+            document.write(k[i] + "<br>");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

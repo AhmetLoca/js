@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*       //!!!! 's takısı birden fazla olabileceğini söyler. Yani bu bir dizidir.
+
+            //getElementsByName : name attribute'unu seçiyor. Genelde inputlar oluyor.
+            //getElementsByTagName : HTML etiketlerimizi seçmemize yarıyor.
+        */
+
+        //TagName : etiket
+
+            function calistir() {
+
+                //Birden fazla olan şeyleri dizi olmada listeleyemiyoruz.(elements)
+                document.getElementsByTagName("h2")[2].style.color ="red";
+                document.getElementsByTagName("h2")[3].style.color ="#ddd";
+
+                var x = document.getElementsByTagName("p");
+                x[0].style.background="#ddd";
+
+
+            }
+
+            function calistir2() {
+               
+
+               var x = document.getElementsByTagName("h2");
+              
+               var i;
+              
+               for(i=0; i<x.length; i++) {
+                   x[i].style.color = "red";
+               }
+
+           
+            }
+
+
+            function calistir3() {
+
+                var x = document.getElementsByName("isim");
+
+                x[1].type = "Submit";
+                x[0].type =  "button";
+
+                var y = document.getElementsByName("isim")[0].tagName;
+
+                if(x = "input"){
+                    document.getElementsByTagName("isim")[0].type = "submit";
+                }else{
+                    document.getElementsByTagName("isim")[0].type = "button";
+ 
+                }
+            }
+    </script>
+
+
+</head>
+<body>
+
+<h2>deneme0</h2>
+<h2>deneme1</h2>
+<h2>deneme2</h2>
+<h2>deneme3</h2>
+<h2>deneme4</h2>
+
+<p>Hi there !</p>
+
+<button type="submit" onclick="calistir()">Click</button>
+
+<button type="submit" onclick="calistir2()">Click-2</button>
+
+<input type="text" name="isim"> <br>
+<input type="text" name="isim"> <br>
+<input type="text" name="isim"> <br>
+
+<button type="submit" onclick="calistir3()">Click-3</button>
+
+</body>
+</html>

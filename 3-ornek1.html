@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example - 1</title>
+    <script>
+        function x(){
+                                               //input'un value değerini al.
+                var deneme = document.getElementById("name").value;
+                document.getElementById("ornek").innerHTML = deneme;
+                ornek.style.background= "#ddd";
+            }
+    </script>
+</head>
+
+<body>
+    <!-- name'leri çeken php'dir. Javascript id'leri ÇEKİYOR. Css'te id'yi kontrol edebiliyoruz. -->
+<input type="text" id="name" />
+<button type="submit" onclick="x()">Submit</button>
+
+<p id="ornek"></p>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Nesnesi</title>
+
+    <script>
+        
+        //window nesnesi
+      
+        /*
+        window koyduğumuz zaman alert nesne oluyor.
+        Arka planda her şey window'a bağlanıyor.
+        nesnelere nokta ile ulaşıyoruz.
+        */
+        window.alert("defnee");
+
+
+//fonksiyonda arka planda şu şekilde window'a bağlanıyor -> window.function
+        function ornek() {
+            return this
+        }
+        console.log(ornek());
+
+/*
+JavaScript'e sınıf kavramı yok.
+Nesneler fonksiyon içide de oluşturulabiliyor.
+
+*/
+
+    //Constractor
+        function ornek() {
+            this.ad = "osman";
+            this.soyad = "kaya";
+            this.yas =20;
+
+            this.sonuc = function() {
+
+                return this.ad + " " + this.soyad + " " + this.yas;
+
+            }
+        }
+
+        var nesne =new ornek();
+        document.write(nesne.sonuc());
+        
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

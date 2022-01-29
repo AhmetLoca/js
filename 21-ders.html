@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+/*
+substring() : istediğini parçalar.
+
+split() : Parçalar.
+
+*/
+
+var yazi = "kolay video dersleri";
+var x = yazi.split(" ");
+document.write(x[1]);
+
+var yazi2 = "test yazı";
+
+var y = yazi2.substring(0,5);
+
+alert(y);
+
+function run10() {
+    var id = document.getElementById("renk").value;
+    alert(id);
+}
+
+
+</script>
+
+</head>
+<body>
+    <select name="" id="renk" onchange="run10();">
+        <option value="renk secin">renk secin</option>
+        <option value="purple">mor</option>
+        <option value="green">yesil</option>
+        <option value="blue">mavi</option>
+    </select>
+
+
+
+</body>
+</html>

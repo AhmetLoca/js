@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+    /*
+        Fonksiyon her yere çağırabileceğimiz kapsüllerdir.
+        
+        function test() {
+                
+            document.write("merhaba");
+        }
+        test();
+     */
+
+// ----------------------------------
+     function test(c,v) {
+
+        return c + v;
+
+     }
+
+    document.write(test(3,5)+"<br>");
+// ----------------------------------
+
+     var mehmet = "mesaj";
+
+     function test2() {
+         return mehmet; //global
+     }
+
+     document.write(test2()+"<br>");
+// -----------------------------------
+
+     /*Dizinin içinde function oluşturabiliyoruz.
+      Dizi içinde fonksiyon kullandığımız zaman isim belirtmemize gerek yok(anonim function).
+     */
+     var x = ["pc","laptop", function(){
+
+        return "deneme";
+
+     }]
+
+     document.write(x[2]());
+// ------------------------------------
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

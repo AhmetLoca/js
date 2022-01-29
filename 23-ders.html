@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-Case Kullanimi</title>
+
+<script>
+/*
+    switch : yakalamak
+    case : durum
+
+    if-else koşulu ile aynı fakat switch-case'in daha hızlı çalıştığı söyleniyor.
+*/
+
+    var araba = "renault";
+    
+    switch(araba) {
+        case "fiat":
+        document.write("Bu araba fiattir");
+        break;
+
+        case "renault":
+        document.write("Bu araba renaulttur");
+        break;
+
+        default:
+        document.write("Böyle bir araba yok");
+        break;
+
+    }
+
+    var saat = new Date ();
+    var d = saat.getDay();
+
+    switch(d) {
+
+        case 0:
+        document.write("Bu gün pazar");
+        break;
+
+        case 1:
+        document.write("Bu gün pazartesi");
+        break;
+
+        case 2:
+        document.write("Bu gün salı");
+        break;
+    
+        case 3:
+        document.write("Bu gün çarşamba");
+        break;
+
+        case 4:
+        document.write("Bu gün perşembe");
+        break;
+
+        case 5:
+        document.write("Bu gün cuma");
+        break;
+
+        case 6:
+        document.write("Bu gün cumartesi");
+        break;
+    }
+
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+        createElement: Yeni bir eleman oluşturmamızı sağlar.
+        */
+
+        function run() {
+            var nesne = document.createElement("button");
+            var t = document.createTextNode("deneme yazisi");
+            nesne.appendChild(t);
+            document.body.appendChild(nesne); //append : iliştirmek
+        }
+
+        function run2() {
+            var nesne = document.createElement("p");
+          
+            var t = document.createTextNode("new text");
+            nesne.appendChild(t);
+
+            document.getElementById("konu").appendChild(nesne);
+        }
+
+        function test() {
+            var nesne = document.createElement("li");
+            var m = document.createTextNode("karpuz");
+
+            nesne.appendChild(m);
+
+            var id = document.getElementById("meyve");
+            id.insertBefore(nesne,id.childNodes[2]);
+        }
+
+    </script>
+</head>
+<body>
+
+    <ul id="meyve">
+        <li>üzüm</li>
+        <li>armut</li>
+        <li>elma</li>
+    </ul>
+    
+    <div id="konu">deneme yazisi</div>
+
+
+    <button type="submit" onclick="run()">Run</button>
+    <button type="submit" onclick="run2()">Run</button>
+    <button type=submit onclick="test()">Insert</button>
+
+</body>
+</html>

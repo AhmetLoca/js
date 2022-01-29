@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+//getAttribute : İçindeki attr'u alıyor.
+//setAttribute : Sonradan içine attr girmemizi sağlıyor
+
+    function run() {
+
+        var x = document.getElementsByTagName("p");
+
+        x[0].setAttribute("class","konu");
+
+
+        var a = document.getElementsByTagName("p");
+
+        a[1].setAttribute("style","padding:10px;background:#eee;margin:3px;");
+    }
+
+
+    function run2() {
+        var y = document.getElementsByTagName("input");
+
+        y[0].setAttribute("disabled",true);
+    }
+
+
+    function run3() {
+
+        var z = document.getElementsByTagName("div");
+
+        var c = z[2].getAttribute("id");
+
+        alert(c);
+    }
+
+</script>
+
+<style>
+    .konu {
+        color:red;
+    }
+</style>
+
+</head>
+<body>
+    
+
+    <p>test yazı</p>
+    <p>test yazı</p>
+    <p>test yazı</p>
+<button type="submit" onclick="run()">CLick</button>
+
+<input type="text">
+
+<button type="submit" onclick="run2()">Click-2</button>
+
+<div id="4"></div>
+<div id="5"></div>
+<div id="6"></div>
+
+<button type="submit" onclick="run3()">Click-3</button>
+
+</body>
+</html>

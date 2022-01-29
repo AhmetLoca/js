@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt and Confirm</title>
+
+
+    <script>
+// ------------------------------------------------
+        //prompt("","") : çabucak
+       var x = prompt("1. degeri girin");
+       var y = prompt("2. degeri girin");
+
+       var z = x*y;
+
+       if(x || y){
+
+        alert(z);
+
+       }else{
+           alert("Değer boş birakilamaz");
+       }
+       
+// -------------------------------------------------
+
+    //confirm : onaylamak, doğrulamak
+       var data = confirm("Are you sure you want to delete the data?");
+
+       if(data){
+           alert("The data delete successfully");
+       }
+       else{
+           alert("The process was cancelled");
+       }
+
+    </script>
+
+<a href="deneme.html" onclick="confirm('silmek istediğinize emin misiniz?')">Sil</a>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+

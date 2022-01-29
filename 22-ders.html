@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+/*
+Cookie kullanımı
+
+*/
+document.cookie = "isim = deger2; expires = Sat Jan 29 2021 15:11:21 GMT";
+
+    window.onload = function() {
+        if(document.cookie.length != 0){
+            var par = document.cookie.split("=");
+            document.bgColor = par[1];
+            document.getElementById("renk").value = par[1];
+        }
+    }
+
+
+function test() {
+    var d = document.getElementById("renk").value;
+
+    if(d != "renk secin") {
+        document.bgColor = d;
+
+        document.cookie = "renk = "+d+";expires =Sat Jan 29 2023 15:11:21 GMT";
+    }
+}
+
+
+</script>
+
+
+</head>
+<body>
+    <select name="" onchange="test();" id="renk">
+        <option value="renk secin">renk secin</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+    </select>
+
+    
+</body>
+</html>

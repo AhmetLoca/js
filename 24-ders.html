@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL bilgisi elde etme</title>
+
+    <script>
+        /*
+        location.href    -> sayfanın url'sini alır.
+        location.replace -> ("www.adres.com"); adrese gider.
+        location.hostname-> site adını alır.
+        location.pathname-> site içindeki yolu alır.
+        location.protocol-> http veya https bilgisini verir.
+        location.assign  -> ("www.adres.com"); sayfa içinden belirtilen adrese gider.
+        //assign : devretmek
+        history.back();  -> onceki sayfaya gider.
+        history.forward();-> sonraki sayfaya gider.     
+    
+    
+        */
+    
+        function test() {
+            var deger = document.getElementById("sonuc");
+
+            deger.innerHTML = window.location.replace("https://www.google.com");
+        }
+    
+    
+    
+    </script>
+
+
+
+
+
+</head>
+<body>
+
+    <button type="submit" onclick="test()">Run</button>
+    <div id="sonuc"></div>
+</body>
+</html>
