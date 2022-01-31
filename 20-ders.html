@@ -20,19 +20,15 @@
 
         function run2() {
             var nesne = document.createElement("p");
-          
             var t = document.createTextNode("new text");
             nesne.appendChild(t);
-
             document.getElementById("konu").appendChild(nesne);
         }
 
         function test() {
             var nesne = document.createElement("li");
             var m = document.createTextNode("karpuz");
-
             nesne.appendChild(m);
-
             var id = document.getElementById("meyve");
             id.insertBefore(nesne,id.childNodes[2]);
         }
@@ -48,7 +44,6 @@
     </ul>
     
     <div id="konu">deneme yazisi</div>
-
 
     <button type="submit" onclick="run()">Run</button>
     <button type="submit" onclick="run2()">Run</button>

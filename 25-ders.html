@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ders-25</title>
+    <script>
+
+        //Klavye Olaylari ve Nesnenin Konumunu Bulmak
+
+     //which klavye olaylari / which = keyCode
+     //keyCode klavye olaylari
+     //offset konum bulma
+
+     /*
+     Klavyedeki olayları yakalamamız için fonksiyonun 
+     içine boş bir parametre gönderiyorum.
+     */
+   
+     function test(event) {
+
+    var sonuc = document.getElementById("sonuc");
+            //event içindeki klavyedeki kodları yakala(keyCode)
+    sonuc.innerHTML = event.keyCode;
+    if(event.keyCode == 120){
+        alert("x tuşuna bastınız");
+        }
+    }
+
+    function test2() {
+        var sonuc = document.getElementById("sonuc2");
+
+        document.getElementById("kutu").innerHTML = sonuc2.offsetLeft;
+    }
+
+  
+
+    </script>
+   
+   
+   <style>
+        #sonuc2 {
+            width : 200px;
+            height : 200px;
+            position : absolute;
+            left : 200px;
+            top : 200px;
+            background: #ddd;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- klavyeden herhangi bir tuşa basınca çalışsın. -->
+    <input type="text" onkeypress="test(event)">
+    <div id="sonuc"></div>
+
+    <div id="sonuc2"></div>
+    <button type="submit" onclick="test2()">Click</button>
+
+    <div id="kutu"></div>
+</body>
+</html>

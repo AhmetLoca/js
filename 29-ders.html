@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        //Mouse'un konumunu bulma -> clientX = pageX and clientY pageY
+        //window.onmousemove
+         onclick = function (event) {
+
+             var kutu = document.getElementById("kutu");
+            // kutu.innerHTML = event.clientX;
+            // kutu2.innerHTML = event.clientY; 
+
+            kutu.style.left = event.clientX+"px"
+            kutu.style.top = event.clientY+ "px"
+
+        }
+
+
+
+ 
+
+    </script>
+<style>
+
+    #kutu{
+        width:100px;
+        height: 200px;
+        position: absolute;
+        background: orange;
+    }
+</style>
+
+</head>
+<body>
+
+
+
+    <!-- <input type="submit" value="click" onclick="ornek(event);"> -->
+    <div id="kutu"></div>
+   <div id="kutu2"></div> 
+</body>
+</html>

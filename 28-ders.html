@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //classList kullanımı
+        /*
+            classList, class'lara mudahale etmemize yarıyor.
+            ekleme ve silme gibi işlemler yapabiliyoruz.
+        */
+        //toggle : aç/kapa
+
+        //item : class sırasını bulma.
+        //contains : class'ın var olup olmadıgını kontrol eder.
+        function ornek() {
+
+            var kutu = document.getElementById("kutu");
+            var kutu = document.getElementById("kutu2");
+          
+            //!! querySelector'de sonradan bir class ekleyebiliyor.
+
+            //class ekleme
+            kutu.classList.add("konu");
+
+            kutu.classList.remove("konu");
+
+            kutu.classList.toggle("konu2");
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <input type="submit" value="tikla" onclick="ornek();">
+    <div id="kutu"></div>
+
+<!-- div'in içerisinde birden fazla class olabilir.
+    bootsrap'te de görmüştük.
+    konu3 diyip class'a farklı bir özellik verebilirim.
+-->
+    <div id="kutu2" class="konu2 konu3"></div>
+
+</body>
+</html>

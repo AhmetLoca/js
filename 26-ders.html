@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #kutu{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:200px;
+    top:50px;
+    }
+</style>
+<body>
+    
+<div id="kutu"><img src="woodener.png" alt="" width="200px"></div>
+
+ <script>
+
+    var kutu = document.getElementById("kutu");
+
+//Klavyeden herhangi bir yere basma olayı = onkeydown
+    window.onkeydown = function(olay) {
+
+        var y = kutu.offsetTop; //offset ile konumunu buldum.
+        var x = kutu.offsetLeft;
+
+        if(olay.keyCode == 37 ){
+                             //artı bağlama operatörü.
+            kutu.style.left = (x - 5)+"px";
+
+        }else if (olay.keyCode == 38) {
+            kutu.style.top = (y - 5)+"px";
+        }
+        else if(olay.keyCode == 39) {
+            kutu.style.left= (x + 5)+"px";
+        }
+        else if (olay.keyCode == 40) {
+            kutu.style.top = (y + 5)+"px";
+
+    }
+}
+
+
+ </script>
+
+</body>
+</html>

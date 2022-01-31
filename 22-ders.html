@@ -14,9 +14,14 @@ Cookie kullanımı
 */
 document.cookie = "isim = deger2; expires = Sat Jan 29 2021 15:11:21 GMT";
 
+//sayfa yüklendiğinde burası çalışacak.
     window.onload = function() {
+                //kaç tane cookie var ? Yani cookie varsa.
         if(document.cookie.length != 0){
+            //eşittirden itibaren cookie'i parçalıyorum.
             var par = document.cookie.split("=");
+           //par bir diziye dönüşüyor ve ben de 1.değerini alıyorum. yani 'd '. 
+           //'d'de d değişkeninden geliyor.
             document.bgColor = par[1];
             document.getElementById("renk").value = par[1];
         }
@@ -29,7 +34,11 @@ function test() {
     if(d != "renk secin") {
         document.bgColor = d;
 
-        document.cookie = "renk = "+d+";expires =Sat Jan 29 2023 15:11:21 GMT";
+
+        /*sayfayı yenilediğimiz zaman color'in uçmaması için cooki ekliyoruz. */
+
+                         //isim   //deger  //son kul. t.
+        document.cookie = "renk = "+d+"; expires =Sat Jan 29 2023 15:11:21 GMT";
     }
 }
 
