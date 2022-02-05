@@ -15,28 +15,22 @@
 
     <input type="submit" value="submit" onclick="x()">
     <input type="submit" value="submit2" onclick="k()">
-
 <script>
-
     //getElementsByClassName
     function x() {
-
     //Bunu yazdığımız anda bir dizi oluyor. Çünkü class birden fazla olabiliyor.
     var y = document.getElementsByClassName("container")[0].innerHTML = "first change"; //innerHTML, etiket içindeki değeri değiştirmemize yarar.
     var y = document.getElementsByClassName("container")[3].innerHTML = "last change"; 
 
     }
 
-
     function k() {
-
         var p = document.getElementsByClassName("container2");
 
         [].forEach.call(p,function(l) {
             l.style.color = "red";
         })
     }
-    
 </script>
 </head>
 <body>

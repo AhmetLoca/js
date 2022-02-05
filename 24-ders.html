@@ -16,28 +16,17 @@
         location.assign  -> ("www.adres.com"); sayfa içinden belirtilen adrese gider.
         //assign : devretmek
         history.back();  -> onceki sayfaya gider.
-        history.forward();-> sonraki sayfaya gider.     
-    
-    
+        history.forward();-> sonraki sayfaya gider.
         */
     
         function test() {
             var deger = document.getElementById("sonuc");
-
             deger.innerHTML = window.location.replace("https://www.google.com");
         }
-    
-    
-    
     </script>
-
-
-
-
 
 </head>
 <body>
-
     <button type="submit" onclick="test()">Run</button>
     <div id="sonuc"></div>
 </body>

@@ -11,28 +11,25 @@
             Diziler, birden fazla veriyi depolamayı sağlar.
         */
 
-        var x = new Array("ahmet","handan","coskun");
+        var x = new Array("Ahmet","Handan","Coşkun");
         document.write(x[0]+ "<br>");
 
-        var y =["ahmet","osman",25,true,["easy","video"]];
-
+        var y =["Ahmet","Osman",25,true,["Easy","Video"]];
         document.write(y[4][1] + "<br>")
 
         var z = ["osman","mehmet"].length;
         document.write(z + "<br>");
 
-
         //concat : birleştirme
-        var a = ["ahmet","osman"].concat(["handan","coskun"]);
-
+        var a = ["Ahmet","Osman"].concat(["Handan","Coşkun"]);
         document.write(a + "<br>");
-        //pop, dizinin son elemanına ulaşır.
-        var b = ["ahmet","osman",true].pop();
 
+        //pop, dizinin son elemanına ulaşır.
+        var b = ["Ahmet","Osman",true].pop();
         document.write(b + "<br>");
 
 
-        var k = ["kamil","bilgisayar","laptop",23,true];
+        var k = ["Kamil","Bilgisayar","Laptop",23,true];
         for(var i = 0; i<k.length; i++){
             document.write(k[i] + "<br>");
         }

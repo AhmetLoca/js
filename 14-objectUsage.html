@@ -7,7 +7,6 @@
     <title>Object Usage</title>
 
 <script>
-
 // -------------------------------------------------------------
 
 //JavaScript'e yazdığınız her kod aslında birer nesnedir. var x = {};
@@ -21,23 +20,20 @@ var person = {
         return this.age;
     }
 };
-
 document.write(person["firstName"]+"<br>"); //Nesnelere nokta ile ulaşılıyor.
-
 document.write(person.outcome()); //outcome() bir fonksiyondur.
-// --------------------------------------------------------------
+// ---------------------------------------------------------------
 
 var x = {};
 
-x.ad = "mehmet";
-x.soyad = "yapar";
+x.ad = "Mehmet";
+x.soyad = "Yapar";
 x.outcome = function() {
     return this.ad;
 }
 
 document.write(x.ad);
 document.write(x.outcome());
-
 </script>
 
 </head>

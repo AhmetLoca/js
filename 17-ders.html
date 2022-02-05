@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-
         /*       //!!!! 's takısı birden fazla olabileceğini söyler. Yani bu bir dizidir.
 
             //getElementsByName : name attribute'unu seçiyor. Genelde inputlar oluyor.
@@ -16,34 +15,24 @@
         //TagName : etiket
 
             function calistir() {
-
-                //Birden fazla olan şeyleri dizi olmadan listeleyemiyoruz.(elements)
+                //Birden fazla olan şeyleri dizi olmadan listeleyemiyoruz(elements).
                 document.getElementsByTagName("h2")[2].style.color ="red";
                 document.getElementsByTagName("h2")[3].style.color ="#ddd";
 
                 var x = document.getElementsByTagName("p");
                 x[0].style.background="#ddd";
-
-
             }
 
-            function calistir2() {
-               
-
+            function calistir2() {   
                var x = document.getElementsByTagName("h2");
-              
                var i;
               
                for(i=0; i<x.length; i++) {
                    x[i].style.color = "red";
                }
-
-           
             }
 
-
             function calistir3() {
-
                 var x = document.getElementsByName("isim");
 
                 x[1].type = "Submit";
@@ -55,7 +44,6 @@
                     document.getElementsByTagName("isim")[0].type = "submit";
                 }else{
                     document.getElementsByTagName("isim")[0].type = "button";
- 
                 }
             }
     </script>

@@ -7,37 +7,30 @@
     <title>ders-25</title>
     <script>
 
-        //Klavye Olaylari ve Nesnenin Konumunu Bulmak
+    //Klavye Olaylari ve Nesnenin Konumunu Bulmak
 
      //which klavye olaylari / which = keyCode
      //keyCode klavye olaylari
      //offset konum bulma
 
      /*
-     Klavyedeki olayları yakalamamız için fonksiyonun 
-     içine boş bir parametre gönderiyorum.
+     Klavyedeki olayları yakalamamız için fonksiyonun içine boş bir parametre gönderiyorum.
      */
    
      function test(event) {
-
-    var sonuc = document.getElementById("sonuc");
+        var sonuc = document.getElementById("sonuc");
             //event içindeki klavyedeki kodları yakala(keyCode)
-    sonuc.innerHTML = event.keyCode;
-    if(event.keyCode == 120){
-        alert("x tuşuna bastınız");
+        sonuc.innerHTML = event.keyCode;
+        if(event.keyCode == 120){
+          alert("x tuşuna bastiniz");
         }
     }
 
     function test2() {
         var sonuc = document.getElementById("sonuc2");
-
         document.getElementById("kutu").innerHTML = sonuc2.offsetLeft;
     }
-
-  
-
     </script>
-   
    
    <style>
         #sonuc2 {
@@ -49,7 +42,6 @@
             background: #ddd;
         }
     </style>
-
 </head>
 <body>
 

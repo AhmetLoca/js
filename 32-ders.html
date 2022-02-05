@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    /* let block scope değer.Yani sadece tanımlandığı
+    { } süslü parantez içerisinden erişilebilir. /
+    
+    constant(sabit) block scope değer.Yani sadece tanımlandığı
+    { } süslü parantez içerisinden erişilebilir. / 
+    
+    var */
+
+    const test = "deneme yazi";
+    document.write(test+"<br />");
+
+    let test2 = "test yazisi";
+    document.write(test2);
+
+// -------------------------------------
+
+var x = 10;
+
+if(x == 10){
+
+    var c = "test yazi"; 
+    /*normalde if sorgusunun içinde bir 
+      değişken oluşturduğumuz zaman buna dışardan 
+      ulaşabiliyoruz.(var ile)
+
+      Bu "var" değişkenini "let" 
+      yaptığım zaman buna dışarıdan ulaşılamıyor.
+      */
+
+}
+
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

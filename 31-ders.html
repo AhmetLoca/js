@@ -11,8 +11,27 @@
 
         //try - catch (hata yakalamak için kullanıyoruz).
 
+        var message = prompt();
 
-        
+        try{
+
+            if(message == "") throw "Message can't empty.";
+            if(isNaN(message)) throw "This value is not a number.";
+
+            message = Number(message);
+            if(message < 18) {
+                throw "You is young than eighteen years old."
+            }
+
+
+
+        }catch(error){
+
+            alert(error);
+
+        }finally {
+            alert("This message show always.");
+        }
 
 
     </script>

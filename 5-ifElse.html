@@ -7,40 +7,35 @@
     <title>Koşul ifadeleri / if-else</title>
 
 <script>
-
     // Condition expressions  / if-else
     // var deneme = true;
 
     // if(deneme){
-    //     document.write("The value is true");
+    //     document.write("The value is true.");
     // }else{
-    //     document.write("The value is false");
+    //     document.write("The value is false.");
     // }
 
 // ---------------------------------------------------------
-
    function x(){
         var deneme2 = document.getElementById("input").value;
         var c = deneme2.length;
 
         if(c == ""){
-            document.getElementById("ornek").innerHTML = "You must enter a value ";
+            document.getElementById("ornek").innerHTML = "You must enter a value.";
         }
         
         else if(c > 6){
             document.getElementById("ornek").innerHTML = "Girdiğiniz karakter 6 karakterden uzun olamaz.";
 
         }
-            
         else{
             document.getElementById("ornek").innerHTML = deneme2;
     }
    }
 </script>
-
 </head>
 <body>
-
     <input type="text" id="input">
     <button type="submit" onclick="x()">Submit</button>
     <p id="ornek"></p>

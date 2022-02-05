@@ -7,14 +7,13 @@
     <title>Document</title>
 <script>
 
-/*
+    /*
     querySelector() : querySelector ile her şeyi seçebiliyorsunuz.
     getElementById ile sadece id'yi seçebilirsiniz.
     getElementsByClassName ile sadece class'ları seçebilirsiniz.
     querySelector hepsini seçmenize yarıyor.
-    Seçerken de css'deki gibi başına nokta koyuyoruz. 
+    Seçerken de CSS'deki gibi başına nokta koyuyoruz. 
     querySelector'de dizi yok.
-
 
     querySelectorAll() : Birden fazla elemanı seçmemize yarıyor.Dizidir.
     Tabi birden fazla seçmek için döngü kullanmamız gerekiyor.
@@ -23,7 +22,6 @@
     function run() {
       var x = document.querySelector(".kutu");
       var y = document.querySelector("#kutu");
-
       var z = document.querySelectorAll(".container");
 
       x.style.color = "red";
@@ -31,13 +29,8 @@
    
     for(var i=0; i<z.length; i++){
         z[i].style.backgroundColor = "red";
-     }
-
-
+      }
     }   
-
-
-
 </script>
 
 </head>
@@ -48,13 +41,11 @@
     <input type="text" name="isim">
     <input type="text" name="isim">
 
-
     <p class="kutu">Test yazi</p>
     <p id="kutu">Test yazi</p>
     <p class="kutu">Test yazi</p>
     <div class="container">deneme</div>
     <div class="container">deneme2</div>
-
     <button type="submit" onclick="run()">Run</button>
 
 </body>

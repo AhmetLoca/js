@@ -9,7 +9,7 @@
     <script>
         //classList kullanımı
         /*
-            classList, class'lara mudahale etmemize yarıyor.
+            classList, class'lara müdahale etmemize yarıyor.
             ekleme ve silme gibi işlemler yapabiliyoruz.
         */
         //toggle : aç/kapa
@@ -25,22 +25,17 @@
 
             //class ekleme
             kutu.classList.add("konu");
-
             kutu.classList.remove("konu");
-
             kutu.classList.toggle("konu2");
         }
-
-
     </script>
 </head>
 <body>
-
     <input type="submit" value="tikla" onclick="ornek();">
     <div id="kutu"></div>
 
 <!-- div'in içerisinde birden fazla class olabilir.
-    bootsrap'te de görmüştük.
+    bootstrap'te de görmüştük.
     konu3 diyip class'a farklı bir özellik verebilirim.
 -->
     <div id="kutu2" class="konu2 konu3"></div>

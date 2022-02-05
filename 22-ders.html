@@ -27,24 +27,18 @@ document.cookie = "isim = deger2; expires = Sat Jan 29 2021 15:11:21 GMT";
         }
     }
 
-
 function test() {
     var d = document.getElementById("renk").value;
-
     if(d != "renk secin") {
         document.bgColor = d;
 
-
-        /*sayfayı yenilediğimiz zaman color'in uçmaması için cooki ekliyoruz. */
+        /*sayfayı yenilediğimiz zaman color'ın uçmaması için cookie ekliyoruz. */
 
                          //isim   //deger  //son kul. t.
         document.cookie = "renk = "+d+"; expires =Sat Jan 29 2023 15:11:21 GMT";
     }
 }
-
-
 </script>
-
 
 </head>
 <body>
@@ -55,6 +49,5 @@ function test() {
         <option value="yellow">yellow</option>
     </select>
 
-    
 </body>
 </html>

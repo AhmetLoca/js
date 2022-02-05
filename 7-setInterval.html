@@ -16,16 +16,14 @@
         var deneme = document.getElementById("ornek").value;
         document.getElementById("sonuc").innerHTML += ".";
     }
-
        //interval : ara, zaman.
        //setInterval fonksiyonu 2 değer alır.
-       //1=Fonksiyon 2=Kaç saniyede bir çalışacak?
+       //1.Fonksiyon 2.kaç saniyede bir çalışacak?
        var d = setInterval(x,'3000');
 
        function c(){
            clearInterval(d);
        }
-
            var saat= new Date();
            document.write(saat);
     </script>
@@ -36,6 +34,5 @@
     <button type="submit" onclick="x()">Submit</button>  
     <div id="sonuc"></div>
     <button type="submit" onclick="c()">Stop</button>
-
 </body>
 </html>

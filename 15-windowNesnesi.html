@@ -7,9 +7,7 @@
     <title>Window Nesnesi</title>
 
     <script>
-        
-        //window nesnesi
-      
+        //Window Nesnesi
         /*
         window koyduğumuz zaman alert nesne oluyor.
         Arka planda her şey window'a bağlanıyor.
@@ -17,17 +15,14 @@
         */
         window.alert("defnee");
 
-
 //fonksiyonda arka planda şu şekilde window'a bağlanıyor -> window.function
         function ornek() {
             return this
         }
         console.log(ornek());
-
 /*
 JavaScript'e sınıf kavramı yok.
-Nesneler fonksiyon içide de oluşturulabiliyor.
-
+Nesneler fonksiyon içinde de oluşturulabiliyor.
 */
 
     //Constractor
@@ -35,17 +30,13 @@ Nesneler fonksiyon içide de oluşturulabiliyor.
             this.ad = "osman";
             this.soyad = "kaya";
             this.yas =20;
-
             this.sonuc = function() {
-
                 return this.ad + " " + this.soyad + " " + this.yas;
-
             }
         }
 
         var nesne =new ornek();
         document.write(nesne.sonuc());
-        
     </script>
 
 </head>
